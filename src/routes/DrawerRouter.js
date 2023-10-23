@@ -5,6 +5,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Lista_Tarefas from '../screens/toDo';
 
+
+//atividade lista de tarefas
+
+
 const Drawer = createDrawerNavigator()
 
 export default function DrawerRouter() {

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 import { Button, Card, IconButton, Text, TextInput } from "react-native-paper";
 
+//atividade lista de tarefas
+
+
 export default function Lista_Tarefas() {
   const [tarefas, setTarefas] = useState([]);
   const [inputValue, setInputValue] = useState("");
