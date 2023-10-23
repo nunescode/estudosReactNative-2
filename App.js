@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
-import Router from './src/routes/Router';
+import DrawerRouter from '../meu-app/src/routes/DrawerRouter';
 
 export default function App() {
   return (
     <PaperProvider>
-      <Router />
+      {/** <Router /> */}
+      <DrawerRouter/>
     </PaperProvider>
   );
 }
