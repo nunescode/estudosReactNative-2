@@ -1,16 +1,16 @@
-import 'react-native-gesture-handler';
+
+import { createDrawerNavigator } from '@react-navigation/drawer'
 import React from 'react'
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import StackPessoas from '../screens/Pessoas/StackPessoas';
-import FormPessoa from '../screens/Pessoas/FormPessoa';
-import ListaPessoas from '../screens/Pessoas/ListaPessoas';
+import StackAlunos from '../screens/Alunos/StackAlunos'
 
 const Drawer = createDrawerNavigator()
 
-export default function DrawerRouter() {
-  return (
-    <Drawer.Navigator initialRouteName='Cadastro'>
-    <Drawer.Screen name="Lista de Pessoas" component={StackPessoas} />
-    </Drawer.Navigator>
-  )
+export default function DrawerRoutes() {
+    return (
+        <Drawer.Navigator initialRouteName='Alunos'>
+            <Drawer.Screen name="Alunos" component={StackAlunos} />
+
+        </Drawer.Navigator>
+
+    )
 }
